@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holaaa    </title>
+</head>
+
+<style>
+    
+    #movableButton {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+  </style>
+ <link rel="icon" href="unu.jpg" >
+<body>
+
+    <p style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; size: 20px;">¿Me perdonas? por favor</p>
+    
+    <button id="movableButton" onclick="moverBoton()">NO</button>
+    <a href="YaAceptaste.html" ><button class="sis">SI</button></a>
+
+
+    <script>
+      function moverBoton() {
+        var boton = document.getElementById('movableButton');
+        var nuevaPosicionX = Math.floor(Math.random() * window.innerWidth);
+        var nuevaPosicionY = Math.floor(Math.random() * window.innerHeight);
+    
+        boton.style.left = nuevaPosicionX + 'px';
+        boton.style.top = nuevaPosicionY + 'px';
+      }
+
+
+    </script>
+    
+</body>
+</html>
